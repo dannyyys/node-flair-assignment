@@ -25,19 +25,24 @@ export const JobCard = (props) => {
       <Flex direction={["row", "row", "column", "column", "column"]}>
         <Center>
           <Image
-            boxSize={["90px", "100px"]}
+            boxSize={["70px", "90px", "90px", "90px", "100px"]}
             borderRadius="5"
             src={props.image}
           />
         </Center>
-        <VStack align="start" pt={["0", "3"]} m={["3", "3", "0", "0", "0"]}>
+        <VStack
+          align="start"
+          pt={["0", "3"]}
+          m={["3", "3", "0", "0", "0"]}
+          width={["250px", "auto", "auto", "auto", "auto", "auto"]}
+        >
           <Text fontSize="md" as="sub" mb="2">
             {props.sub}
           </Text>
           <Text
             align="left"
             fontWeight="bold"
-            fontSize={["md", "2xl"]}
+            fontSize={["md", "md", "2xl"]}
             noOfLines="2"
             /**
              * 70px for alignment of card details when title does not fill 2 lines in standard view
@@ -49,17 +54,17 @@ export const JobCard = (props) => {
 
           {props.salary ? (
             <Flex align="center">
-              <Text fontSize="md" as="sup" pt="3">
+              <Text fontSize={["14px", "md"]} as="sup" pt="3">
                 {props.salary}
               </Text>
               <Box
                 px="2"
                 py="1"
                 borderRadius="5"
-                fontSize="10px"
+                fontSize={["10px"]}
                 backgroundColor="#f1f1f1"
                 color="#3a3a3a"
-                ml={["0", "0", "0", "0", "2"]}
+                ml={["1", "1", "1", "1", "2"]}
               >
                 {props.est}
               </Box>
