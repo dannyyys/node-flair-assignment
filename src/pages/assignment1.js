@@ -67,7 +67,7 @@ const jobs = [
 
 const assignment1 = () => {
   return (
-    <Box backgroundColor="#f2f1ee" align="center" h="100vh" w="100%">
+    <Box backgroundColor="#f2f1ee" align="center" height="100vh" width="100%">
       <Heading>Assignment 1!!!!</Heading>
       <Center>
         <SimpleGrid columns={["1", "1", "2", "3", "3"]} spacing={5}>

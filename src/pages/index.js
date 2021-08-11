@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 
 const Index = () => (
-  <VStack mt="25vh">
+  <VStack marginTop="25vh">
     <Heading>Hello, welcome to my assignment</Heading>
     <HStack>
       <ChakraLink href="/assignment1">

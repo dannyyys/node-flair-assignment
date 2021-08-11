@@ -14,7 +14,7 @@ import { useState } from "react";
 const assignment2 = () => {
   const [category, setCategory] = useState("mountain");
   return (
-    <Box backgroundColor="#f2f1ee" align="center" h="100vh" w="100%">
+    <Box backgroundColor="#f2f1ee" align="center" height="100vh" width="100%">
       <Heading>Assignment 2~~~~</Heading>
       <Center>
         <VStack>

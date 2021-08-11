@@ -18,7 +18,7 @@ export const JobCard = (props) => {
       height="auto"
       width={["95vw", "95vw", "450px", "320px", "400px"]}
       borderRadius="10"
-      p={["3", "5"]}
+      padding={["3", "5"]}
       backgroundColor="#ffffff"
       borderColor="#e1e0dd"
     >
@@ -32,8 +32,8 @@ export const JobCard = (props) => {
         </Center>
         <VStack
           align="start"
-          pt={["0", "3"]}
-          m={["3", "3", "0", "0", "0"]}
+          paddingTop={["0", "3"]}
+          margin={["3", "3", "0", "0", "0"]}
           width={["250px", "auto", "auto", "auto", "auto"]}
         >
           <Text fontSize="md" as="sub" mb="2">
@@ -45,7 +45,7 @@ export const JobCard = (props) => {
             fontSize={["md", "xl", "2xl", "2xl", "2xl"]}
             noOfLines="2"
             /**
-             * 70px for alignment of card details when title does not fill 2 lines in standard view
+             * 70px for alignment of card details when title does not fill 2 lines in standard desktop view
              */
             height={["", "", "", "", "70px"]}
           >
@@ -58,13 +58,13 @@ export const JobCard = (props) => {
                 {props.salary}
               </Text>
               <Box
-                px="2"
-                py="1"
+                paddingX="2"
+                paddingY="1"
                 borderRadius="5"
                 fontSize={["10px"]}
                 backgroundColor="#f1f1f1"
                 color="#3a3a3a"
-                ml={["1", "1", "1", "1", "2"]}
+                marginLeft={["1", "1", "1", "1", "2"]}
               >
                 {props.est}
               </Box>
@@ -77,7 +77,7 @@ export const JobCard = (props) => {
         </VStack>
       </Flex>
 
-      <HStack mt="2" justifyContent="space-between" width="100%">
+      <HStack marginTop="2" justifyContent="space-between" width="100%">
         <Text color="#969696" fontStyle="italic" fontSize="md" as="sup">
           about {props.time} hours ago
         </Text>
@@ -97,8 +97,8 @@ export const JobCard = (props) => {
       <HStack overflow="hidden">
         {props.skills.map((skill, i) => (
           <Box
-            px="3"
-            py="1"
+            paddingX="3"
+            paddingY="1"
             borderRadius="5"
             fontWeight="bold"
             backgroundColor="#f1f1f1"
