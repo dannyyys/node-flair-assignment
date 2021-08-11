@@ -34,7 +34,7 @@ export const JobCard = (props) => {
           align="start"
           pt={["0", "3"]}
           m={["3", "3", "0", "0", "0"]}
-          width={["250px", "auto", "auto", "auto", "auto", "auto"]}
+          width={["250px", "auto", "auto", "auto", "auto"]}
         >
           <Text fontSize="md" as="sub" mb="2">
             {props.sub}
@@ -54,7 +54,7 @@ export const JobCard = (props) => {
 
           {props.salary ? (
             <Flex align="center">
-              <Text fontSize={["14px", "md"]} as="sup" pt="3">
+              <Text fontSize={["13px", "md", "md", "md", "md"]} as="sup" pt="3">
                 {props.salary}
               </Text>
               <Box
