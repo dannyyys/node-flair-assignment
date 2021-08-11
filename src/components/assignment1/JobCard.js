@@ -42,12 +42,12 @@ export const JobCard = (props) => {
           <Text
             align="left"
             fontWeight="bold"
-            fontSize={["md", "md", "2xl"]}
+            fontSize={["md", "xl", "2xl", "2xl", "2xl"]}
             noOfLines="2"
             /**
              * 70px for alignment of card details when title does not fill 2 lines in standard view
              */
-            height={["", "70px"]}
+            height={["", "", "", "", "70px"]}
           >
             {props.title}
           </Text>
